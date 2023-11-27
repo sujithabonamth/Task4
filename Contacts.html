@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="Homepage.css" />
+  <link rel="stylesheet" href="Contacts.css" />
+  
+  <title>
+    Health on us
+  </title>
+</head>
+
+<body>
+  <div class="main">
+    <header>TECHNOVERT</header>
+    <div class="topnav">
+      <img src="blog-icon.png" class="img"> </img>
+      <ul>
+        <li><a href="Homepage.html">HOME</a></li>
+        <li><a>SERVICES</a></li>
+        <li><a href="Career.html" class="servicehover">CAREERS</a></li>
+        <li><a href="Contacts.html">CONTACT</a></li>
+
+
+      </ul>
+
+    </div>
+    <div id="formContainer">
+
+
+      <form name="detailsform" id="detailsform"  class="form" onsubmit="return validationform(event)">
+         <div id="errorMessage" style="color: red;"></div>
+        <div class="field">
+          <label for="myname">My Name:</label>
+          <input id="myname" class="input-field" type="text"  oninput="clearNameError()"/>
+          <span id="nameerror" class="errormsg"></span>
+        </div>
+        <div class="field">
+          <label class="required" for="email">My Email Address:</label>
+          <input class="input-field" type="text" id="email"  oninput="clearEmailError()" />
+          <span id="emailerror" class="errormsg"></span>
+        </div>
+
+        <div class="field">
+          <label for="telnum">My Telephone Number:</label>
+          <input class="input-field" id="telnum" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="orgname">My Orgnization Name:</label>
+          <input class="input-field" id="orgname" type="text"  oninput="clearOrgError()" />
+          <span id="orgerror" class="errormsg"></span>
+        </div>
+        <div class="field">
+          <label for="city">My City:</label>
+          <input class="input-field" id="city" type="text" />
+        </div>
+        <div class="field">
+          <label for="state">Select State:</label>
+
+
+          <div class="custom-select">
+
+            <select id="state" onchange="updatePromoCode()">
+              <option>Select State or Province</option>
+              <option>Andhrapradesh</option>
+              <option>Telangana</option>
+
+            </select>
+          </div>
+        </div>
+       <div class="fields">
+    <label>Please Contact Me by:</label>
+    <div class="container">
+
+        <div class="radio-option">
+            <input type="radio" name="contact" value="email" class="radio-btn">
+            <label for="email">Email</label>
+        </div>
+
+        <div class="radio-option">
+            <input type="radio" name="contact" value="phone" class="radio-btn">
+            <label for="phone">Phone</label>
+        </div>
+
+        <div class="radio-option">
+            <input type="radio" name="contact" value="both" class="radio-btn">
+            <label for="both">Both</label>
+        </div>
+
+    </div>
+</div>
+
+        <div class="field">
+
+          <label for="promoCode">Promotion Code:</label>
+          <input class="input-field" type="text" id="promoCode" readonly>
+        </div>
+
+
+
+        <div class="field">
+          <label>Gender:</label>
+
+          <input type="radio" name="gender" value="Male" onchange="showGreeting()"> Male
+          <input type="radio" name="gender" value="Female" onchange="showGreeting()"> Female
+        </div>
+
+        <div class="field">
+          <label class="input-field" id="label1" for="test">Optional Information</label>
+          <p>This Information is optional but it helps us to serve you better.</p>
+        </div>
+
+        <div class="field">
+          <label for="site">My Website Address is :</label>
+          <input class="input-field" id="site" type="text" />
+        </div>
+        <div class="field">
+          <p>Tell us More about Your Organization :</p>
+        </div>
+        <div class="org-info-space">
+          <textarea>
+          </textarea>
+
+
+        </div>
+        <div class="field">
+          <p>Tell us More about Your Organization :</p>
+        </div>
+        <div class="org-info-space">
+          <textarea>
+          </textarea>
+
+
+        </div>
+        <div class="button-container">
+
+          <button type="submit" class="btn-style" onclick="clearForm()" value="clearform">Send Message</button>
+         
+          <button class="btn-style" onclick="clearForm(event)">Clear Form</button>
+          <div id="successMessage" style="color: green;"></div>
+
+        </div>
+        
+
+
+
+
+
+
+    </div>
+    </form>
+  </div>
+  <script src="Contacts.js"></script>
+</body>
+
+</html>

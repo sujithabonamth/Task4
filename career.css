@@ -1,0 +1,52 @@
+.heading{
+  margin-bottom: 20px;
+}
+ 
+.field{
+    padding: 12px;  
+    padding-bottom: 20px;
+    /* margin-top: 6px;  */
+    margin-bottom: 10px;
+    font-family:'Segoe UI semibold';
+   
+  }
+  .description {
+   
+    display: block;
+    margin-bottom: 20px; 
+    padding: 10px;
+  }
+ 
+  .error-message {
+   
+    margin-top: 10px;
+  }
+  .input-field {
+    
+      font-size: 14px;
+     
+     }
+     .field-comment{
+      height:100px;
+      width:300px;
+   
+     
+     }
+  .form{
+  padding:20px 24px;
+  }
+  label{
+    width:150px;
+   
+    display: inline-block;
+  }
+  .button-submit{
+font-size: 14px;
+width:120px;
+height:30px;
+padding: 2px 8px;
+margin: 4px 2px;
+text-align: left;
+font-family:'Segoe UI semibold';
+  }
+  

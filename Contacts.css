@@ -1,0 +1,90 @@
+
+
+
+.field{
+  /* padding: 12px;  */
+  padding-bottom: 20px;
+  /* margin-top: 6px;  */
+  margin-bottom: 10px;
+ 
+ 
+}
+.fields{
+  
+  display: flex;
+  
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.input-field {
+    border-top-color:black ;
+    font-size: 14px;
+   
+   }
+  textarea{
+    height:100px;
+    width:400px;
+ overflow-y: scroll;
+
+ border: 1px solid black; 
+ border-right-width: 0px;
+ resize: none;
+    
+  }
+   
+.form{
+padding:20px 24px;
+}
+label{
+  width:200px;
+ 
+  display: inline-block;
+}
+.errormsg{
+  color:red;
+}
+.org-info-space {
+  margin-bottom: 20px;
+  
+}
+.button-container {
+  margin-top: 10px;
+ 
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+ 
+.custom-select select {
+  appearance: none;
+  
+  width: 180px; 
+ 
+  
+}
+.btn-style {
+ 
+  color: black;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    width: 120px;
+    font-size: 12px;
+    padding: 2px 8px;
+    margin-right: 10px;
+background-color: #d4d0c8;
+}
+.custom-select::after {
+  content: '\25BC'; 
+  border-top-color: black;
+   font-size: 14px;
+   color: #555;
+  position: absolute; 
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.successMessage{
+color:green;
+}
+
